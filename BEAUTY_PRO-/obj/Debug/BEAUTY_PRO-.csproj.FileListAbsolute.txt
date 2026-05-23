@@ -10,3 +10,4 @@ C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_
 C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.pdb
 C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.exe.config
 C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO_.HizmetlerForm.resources
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO_.RandevuForm.resources
