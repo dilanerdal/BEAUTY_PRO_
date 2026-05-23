@@ -1,0 +1,12 @@
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\bin\Debug\BEAUTY_PRO-.exe.config
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\bin\Debug\BEAUTY_PRO-.exe
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\bin\Debug\BEAUTY_PRO-.pdb
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.csproj.AssemblyReference.cache
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO_.MusterilerForm.resources
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO_.Properties.Resources.resources
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.csproj.GenerateResource.cache
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.csproj.CoreCompileInputs.cache
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.exe
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.pdb
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO-.exe.config
+C:\Users\Dilan\source\repos\dilanerdal\BEAUTY_PRO_\BEAUTY_PRO-\obj\Debug\BEAUTY_PRO_.HizmetlerForm.resources
