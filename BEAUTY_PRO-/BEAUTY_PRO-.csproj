@@ -103,6 +103,9 @@
     <EmbeddedResource Include="MusterilerForm.resx">
       <DependentUpon>MusterilerForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="PersonelForm.resx">
+      <DependentUpon>PersonelForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
