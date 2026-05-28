@@ -97,6 +97,9 @@
     <Compile Include="RaporForm.Designer.cs">
       <DependentUpon>RaporForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AnaPanel.resx">
+      <DependentUpon>AnaPanel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HizmetlerForm.resx">
       <DependentUpon>HizmetlerForm.cs</DependentUpon>
     </EmbeddedResource>

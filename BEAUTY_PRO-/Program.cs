@@ -16,7 +16,7 @@ namespace BEAUTY_PRO_
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new OdemeForm());
+            Application.Run(new AnaPanel());
         }
     }
 }

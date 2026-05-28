@@ -15,6 +15,21 @@ namespace BEAUTY_PRO_
         public AnaPanel()
         {
             InitializeComponent();
+            AnaPanelTasarim();
+        }
+        private void AnaPanelTasarim()
+        {
+            Panel panelMenu = new Panel();
+            panelMenu.Name = "panelMenu";
+            panelMenu.Dock = DockStyle.Left;
+            panelMenu.Width = 220;
+            panelMenu.BackColor = Color.FromArgb(20, 20, 40);
+
+            this.Controls.Add(panelMenu);
+        }
+        private void AnaPanel_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
