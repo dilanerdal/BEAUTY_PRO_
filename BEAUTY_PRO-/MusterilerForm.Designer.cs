@@ -40,6 +40,8 @@
             this.dgvMusteriler = new System.Windows.Forms.DataGridView();
             this.btnGuncelle = new System.Windows.Forms.Button();
             this.btnSil = new System.Windows.Forms.Button();
+            this.lblAra = new System.Windows.Forms.Label();
+            this.txtAra = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMusteriler)).BeginInit();
             this.SuspendLayout();
             // 
@@ -130,7 +132,7 @@
             // 
             // btnGuncelle
             // 
-            this.btnGuncelle.Location = new System.Drawing.Point(103, 322);
+            this.btnGuncelle.Location = new System.Drawing.Point(103, 307);
             this.btnGuncelle.Name = "btnGuncelle";
             this.btnGuncelle.Size = new System.Drawing.Size(75, 23);
             this.btnGuncelle.TabIndex = 10;
@@ -140,7 +142,7 @@
             // 
             // btnSil
             // 
-            this.btnSil.Location = new System.Drawing.Point(128, 364);
+            this.btnSil.Location = new System.Drawing.Point(103, 351);
             this.btnSil.Name = "btnSil";
             this.btnSil.Size = new System.Drawing.Size(75, 23);
             this.btnSil.TabIndex = 11;
@@ -148,11 +150,30 @@
             this.btnSil.UseVisualStyleBackColor = true;
             this.btnSil.Click += new System.EventHandler(this.btnSil_Click);
             // 
+            // lblAra
+            // 
+            this.lblAra.AutoSize = true;
+            this.lblAra.Location = new System.Drawing.Point(268, 13);
+            this.lblAra.Name = "lblAra";
+            this.lblAra.Size = new System.Drawing.Size(74, 16);
+            this.lblAra.TabIndex = 12;
+            this.lblAra.Text = "Müşteri Ara";
+            // 
+            // txtAra
+            // 
+            this.txtAra.Location = new System.Drawing.Point(370, 13);
+            this.txtAra.Name = "txtAra";
+            this.txtAra.Size = new System.Drawing.Size(100, 22);
+            this.txtAra.TabIndex = 13;
+            this.txtAra.TextChanged += new System.EventHandler(this.txtAra_TextChanged);
+            // 
             // MusterilerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.txtAra);
+            this.Controls.Add(this.lblAra);
             this.Controls.Add(this.btnSil);
             this.Controls.Add(this.btnGuncelle);
             this.Controls.Add(this.dgvMusteriler);
@@ -188,5 +209,7 @@
         private System.Windows.Forms.DataGridView dgvMusteriler;
         private System.Windows.Forms.Button btnGuncelle;
         private System.Windows.Forms.Button btnSil;
+        private System.Windows.Forms.Label lblAra;
+        private System.Windows.Forms.TextBox txtAra;
     }
 }

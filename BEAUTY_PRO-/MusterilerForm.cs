@@ -102,5 +102,20 @@ namespace BEAUTY_PRO_
 
             MusterileriListele();
         }
+
+        private void txtAra_TextChanged(object sender, EventArgs e)
+        {
+            SqlDataAdapter da = new SqlDataAdapter(
+    "SELECT * FROM Musteriler WHERE AdSoyad LIKE @arama",
+    db.GetConnection()
+);
+
+            da.SelectCommand.Parameters.AddWithValue("@arama", "%" + txtAra.Text + "%");
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            dgvMusteriler.DataSource = dt;
+        }
     }
 }
