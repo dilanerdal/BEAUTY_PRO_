@@ -7,24 +7,63 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace BEAUTY_PRO_
 {
     public partial class AnaPanel : Form
+   
     {
+        DatabaseConnection db = new DatabaseConnection();
         public AnaPanel()
         {
             InitializeComponent();
             AnaPanelTasarim();
             DashboardVerileriGetir();
+            SonRandevulariGetir();
         }
+
+
 
         private void DashboardVerileriGetir()
         {
-            lblAktifMusteri.Text = "256";
-            lblBugunkuRandevu.Text = "12";
-            lblAylikKazanc.Text = "₺28.450";
+            {
+                db.GetConnection().Open();
+
+                SqlCommand komutMusteri = new SqlCommand(
+                    "SELECT COUNT(*) FROM Musteriler",
+                    db.GetConnection()
+                );
+                lblAktifMusteri.Text = komutMusteri.ExecuteScalar().ToString();
+
+                SqlCommand komutRandevu = new SqlCommand(
+                    "SELECT COUNT(*) FROM Randevular WHERE Tarih = CAST(GETDATE() AS DATE)",
+                    db.GetConnection()
+                );
+                lblBugunkuRandevu.Text = komutRandevu.ExecuteScalar().ToString();
+
+                SqlCommand komutKazanc = new SqlCommand(
+                    "SELECT ISNULL(SUM(Tutar), 0) FROM Odemeler WHERE MONTH(OdemeTarihi)=MONTH(GETDATE()) AND YEAR(OdemeTarihi)=YEAR(GETDATE())",
+                    db.GetConnection()
+                );
+                lblAylikKazanc.Text = "₺" + komutKazanc.ExecuteScalar().ToString();
+
+                db.GetConnection().Close();
+            }
         }
+        private void SonRandevulariGetir()
+        {
+            SqlDataAdapter da = new SqlDataAdapter(
+                "SELECT TOP 5 m.AdSoyad AS Musteri, h.HizmetAdi AS Hizmet, r.Tarih, r.Saat FROM Randevular r INNER JOIN Musteriler m ON r.MusteriID = m.MusteriID INNER JOIN Hizmetler h ON r.HizmetID = h.HizmetID ORDER BY r.RandevuID DESC",
+                db.GetConnection()
+            );
+
+            DataTable dt = new DataTable();
+            da.Fill(dt);
+
+            dgvSonRandevular.DataSource = dt;
+        }
+
         private void AnaPanelTasarim()
         {
             Panel panelMenu = new Panel();
@@ -74,6 +113,22 @@ namespace BEAUTY_PRO_
         {
             PersonelForm frm = new PersonelForm();
             frm.ShowDialog();
+        }
+
+        private void btnCikis_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panelIcerik_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            lblTarih.Text = DateTime.Now.ToShortDateString();
+            lblSaat.Text = DateTime.Now.ToLongTimeString();
         }
     }
 }
