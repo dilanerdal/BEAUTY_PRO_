@@ -1,27 +1,42 @@
 # BeautyPro Güzellik Salonu Otomasyonu
 
-Bu proje C# Windows Forms ve SQL Server kullanılarak geliştirilmiş bir güzellik salonu otomasyon sistemidir.
+## Proje Hakkında
 
-## Özellikler
-
-* Müşteri Yönetimi
-* Hizmet Yönetimi
-* Randevu Yönetimi
-* Personel Yönetimi
-* Ödeme Yönetimi
-* Dashboard
-* Canlı İstatistikler
-* Müşteri Arama Sistemi
+BeautyPro, güzellik salonlarının müşteri, hizmet, randevu, ödeme ve personel işlemlerini yönetmek amacıyla geliştirilmiş bir C# Windows Forms uygulamasıdır.
 
 ## Kullanılan Teknolojiler
 
-* C#
-* Windows Forms
+* C# Windows Forms
 * SQL Server
-* ADO.NET
-* GitHub
+* Entity Framework
+* LINQ
+* Git & GitHub
+
+## Özellikler
+
+* Müşteri Ekleme, Güncelleme, Silme
+* Hizmet Ekleme, Güncelleme, Silme
+* Personel Yönetimi
+* Randevu Yönetimi
+* Ödeme Takibi
+* Dashboard Ekranı
+* Günlük Özet Paneli
+* Son Randevular Listesi
+* En Çok Tercih Edilen Hizmetler
+* LINQ Sorguları
+* Entity Framework Kullanımı
+
+## Dashboard İçeriği
+
+* Aktif Müşteri Sayısı
+* Bugünkü Randevu Sayısı
+* Aylık Kazanç
+* Son Randevular
+* Günlük Özet
+* Popüler Hizmetler
 
 ## Geliştirici
 
 Dilan Erdal
-# BEAUTY_PRO_
+Yönetim Bilişim Sistemleri Öğrencisi
+
